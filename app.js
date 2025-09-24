@@ -1,6 +1,12 @@
-const mathModule = require("./math/index");
+// const mathModule = require("./math/index");
+const {
+  printSum,
+  printSubstraction,
+  printMultiplication,
+  printDiv,
+} = require("./math/index");
 
-mathModule.printSum(1, 2);
-mathModule.printSubstraction(1, 2);
-mathModule.printMultiplication(1, 2);
-mathModule.printDiv(1, 2);
+printSum(1, 2);
+printSubstraction(1, 2);
+printMultiplication(1, 2);
+printDiv(1, 2);
