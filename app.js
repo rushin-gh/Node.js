@@ -1,5 +1,4 @@
-const mathModule = require("./math");
+// const mathModule = require("./math");
+import { c } from "./math.js";
 
-let privateVar = 1;
-
-console.log(mathModule.c);
+console.log(c);
