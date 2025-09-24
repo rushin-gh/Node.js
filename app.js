@@ -1,10 +1,5 @@
-let arr = [1, 3, 2, 3, 6, 4, 5, 9];
-let evenArr = [];
+const mathModule = require("./math");
 
-for (let item of arr) {
-  if (item % 2 && !evenArr.includes(item)) {
-    evenArr.push(item);
-  }
-}
+let privateVar = 1;
 
-console.log(evenArr);
+console.log(mathModule.c);
