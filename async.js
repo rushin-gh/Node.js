@@ -6,18 +6,21 @@ console.log("Async ran");
 let a = 1234;
 let b = 5678;
 
+let fileData = fs.readFileSync("./dummy.txt", "utf-8");
+console.log("File read successfully");
+
 https.get("https://google.com", (response) => {
   console.log("Http response received ", typeof response);
   response.resume();
 });
 
-fs.readFile("./dummy.json", "utf-8", (err, data) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("File read : ", data);
-  }
-});
+// fs.readFile("./dummy.json", "utf-8", (err, data) => {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log("File read : ", data);
+//   }
+// });
 
 setTimeout(() => {
   console.log("Timeout called");
