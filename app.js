@@ -4,7 +4,7 @@ const {
   printSubstraction,
   printMultiplication,
   printDiv,
-} = require("./math/index");
+} = require("./math");
 
 printSum(1, 2);
 printSubstraction(1, 2);
